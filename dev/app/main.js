@@ -20,7 +20,8 @@ require.config({
   },
 
   packages: [
-    'widgets/cats'
+    'widgets/cats',
+    'widgets/dogs'
   ],
 
   deps: ['text']

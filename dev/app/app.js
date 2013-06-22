@@ -1,7 +1,8 @@
 define(function(require) {
 
   var Backbone = require('backbone'),
-      Cats = require('widgets/cats');
+      Cats = require('widgets/cats'),
+      Dogs = require('widgets/dogs');
 
   console.log(Backbone);
 
@@ -9,7 +10,8 @@ define(function(require) {
     routes: {
       '': 'index',
       'index': 'index',
-      'cats': 'showCats'
+      'cats': 'showCats',
+      'dogs': 'showDogs'
     },
 
     index: function() {
@@ -20,6 +22,11 @@ define(function(require) {
       console.log('cats');
       var cats = new Cats();
       cats.show();
+    },
+      showDogs: function() {
+      console.log('dogs');
+      var dogs = new Dogs();
+      dogs.show();
     }
   });
 
